@@ -1,0 +1,17 @@
+<div class="container">
+    <div style="justify-content: center;">
+        <button class="btn btn-secondary my-4" (click)="sortActors()"> Sort By Name</button>
+    </div>
+    <div *ngFor = "let actor of ActorsList" class="shadow p-3 mb-5 bg-white rounded my-3"> 
+        <div class="d-flex flex-row justify-content-center my-4">
+            <h4>{{actor.ActorName}}</h4>
+            <!-- <button class="btn btn-outline-secondary btn-sm dropdown-toggle ml-5" > </button> -->
+        </div>
+        <div id="Myid">
+            <h5>{{actor.ActorName}}</h5>
+            <p>Date of Birth: {{actor.ActorDOB}}</p>
+            <p>No of movies:</p>
+            <p>{{actor.MovieIdArrLen}}</p>
+        </div>
+    </div>
+</div>
